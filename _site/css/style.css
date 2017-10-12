@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav {
-  background: #fff;
+  
 }
 .fh5co-nav .top-menu {
   padding: 28px 0;
@@ -976,9 +976,16 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-footer .fh5co-footer-links li{
+    margin-bottom: 30px;
+    display: block;
+  }
 }
 #fh5co-footer .fh5co-footer-links li a {
-  color: rgba(0, 0, 0, 0.5);
+  color: white;
   text-decoration: none;
 }
 #fh5co-footer .fh5co-footer-links li a:hover {

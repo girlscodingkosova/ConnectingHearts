@@ -54,11 +54,21 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
  	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+ 		<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+	<script type="text/javascript">
+$(document).ready(function() {
+  $('#subscribe_me_button').click(function() {
+  document.cookie = "MCEvilPopupClosed" + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"acef10f2c3ff19efbf16023c5","lid":"aba51a50ee"}) })
+});
+});
+</script>
 	</head>
 	<body>
 	
 	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"bc1aad23fb61ea22dbfb6df88","lid":"63da4e9f8d"}) })</script>
-		
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
@@ -93,15 +103,17 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box text-center" style="padding-left:80px;" data-animate-effect="fadeIn">
-							<h1 style="color: #ffffff; font-size:40px; font-weight: bold;">Code 4 Mitrovica</h1>
+							<h1 style="color: #ffffff; font-size:40px; font-weight: bold;">Code for Mitrovica</h1>
 							<h2 style="font-size:30px; color: #cbd0d8;">Connecting Hearts Through Technology</h2>
 							<h2> Powered by <a href="http://www.girlscodingkosova.org/" target="_blank">Girls Coding Kosova</a></h2>
-							<p><a class="btn btn-primary btn-lg btn-demo" href="https://goo.gl/forms/T5lW9Zoav7bffOSu2" target="_blank"></i> Subscribe</a> 
+							<p><a class="btn btn-primary btn-lg btn-demo" href="http://eepurl.com/cV0rL5" target="_blank"></i> Subscribe</a> 
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+
 	</header>
 	</div>
 	<div id="fh5co-features">
@@ -538,7 +550,8 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
-	
+
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
